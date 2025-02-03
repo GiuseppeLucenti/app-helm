@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: {{ .Release.Name }}-deployment
+  name: {{ .Release.Name }}-deployment
+spec:
+  replicas: {{ .Values.NumReplicas }}
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}-deployment
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: {{ .Release.Name }}-deployment
+    spec:
+      containers:
+      - image: giusp/lab-container:1.0.1-app1
+        name: lab-container
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
