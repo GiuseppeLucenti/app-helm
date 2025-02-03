@@ -3,12 +3,12 @@ entries:
   app1-helm:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-03T15:34:11.014864176+01:00"
+    created: "2025-02-03T15:50:41.873450952+01:00"
     description: A Helm chart for Kubernetes
     digest: 30373c4a03a570ce856244479e060a2d7221afbd54686d30ec633b696bdebb11
     name: app1-helm
     type: application
     urls:
-    - https://github.com/GiuseppeLucenti/app-helm/app1-helm-0.1.0.tgz
+    - https://giuseppelucenti.github.io/app-helm/app1-helm-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-03T15:34:11.013617993+01:00"
+generated: "2025-02-03T15:50:41.873201908+01:00"
